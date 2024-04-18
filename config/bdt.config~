@@ -1,0 +1,46 @@
+{
+  "inputDirectory" : "c:\bdt-samples\input",
+  "outputDirectory" : "/bdt-samples/output",
+  "threadCount" : 4,
+  "batchSize" : 1000,
+  "vts" : {
+    "hostName" : "cts-server-1.scoobylab.com",
+    "userName" : "cts-user",
+    "password" : "0j571fX6CFBQfqapneKIDg==",
+    "tokenUrl" : "https://cts-server-1.scoobylab.com/vts/rest/v2.0/tokenize",
+    "detokenUrl" : "https://cts-server-1.scoobylab.com/vts/rest/v2.0/detokenize",
+    "sslConfig" : {
+      "serverConfig" : {
+        "truststore" : "",
+        "password" : "0j571fX6CFBQfqapneKIDg==",
+        "verifyHostname" : true,
+        "sslMode" : "ALLOW_ALL"
+      },
+      "clientConfig" : {
+        "keystore" : "",
+        "sslMode" : "ALLOW_ALL",
+        "storePassword" : "0j571fX6CFBQfqapneKIDg==",
+        "keyPassword" : "0j571fX6CFBQfqapneKIDg=="
+      }
+    }
+  },
+  "crypto" : {
+    "@type" : "JCE",
+    "username" : "admin",
+    "password" : "0j571fX6CFBQfqapneKIDg=="
+  },
+  "dataProtectionConfig" : {
+    "@type" : "password",
+    "username" : "admin",
+    "password" : "0j571fX6CFBQfqapneKIDg=="
+  },
+  "characterSets" : [ {
+    "latin" : [ "0020-007E" ]
+  }, {
+    "digits" : [ "0030-0039" ]
+  }, {
+    "alphabets" : [ "0041-005A", "0061-007A" ]
+  }, {
+    "alphanumeric" : [ "0030-0039", "0041-005A", "0061-007A" ]
+  } ]
+}
